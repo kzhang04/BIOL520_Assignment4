@@ -334,7 +334,7 @@ valid_km_fit <- survfit(valid_surv ~ valid_filtered_data$pred_risk)
 # Plot Kaplan-Meier curve for test set
 (test_km_plot <- ggsurvplot(test_km_fit, data = test_data, pval = TRUE, risk.table = FALSE, 
                            title = "Kaplan-Meier Curve - Test Set", 
-                           xlab = "Time", ylab = "Survival Probability"))
+                           xlab = "Time (months)", ylab = "Survival Probability"))
 ```
 
 ![](Model_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
@@ -343,7 +343,7 @@ valid_km_fit <- survfit(valid_surv ~ valid_filtered_data$pred_risk)
 # Plot Kaplan-Meier curve for validation set
 (valid_km_plot <- ggsurvplot(valid_km_fit, data = valid_filtered_data, pval = TRUE, risk.table = FALSE,
                             title = "Kaplan-Meier Curve - Validation Set", 
-                            xlab = "Time", ylab = "Survival Probability"))
+                            xlab = "Time (months)", ylab = "Survival Probability"))
 ```
 
 ![](Model_files/figure-gfm/unnamed-chunk-9-2.png)<!-- -->
